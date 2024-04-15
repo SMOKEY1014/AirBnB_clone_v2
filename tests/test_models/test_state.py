@@ -8,7 +8,6 @@ import os
 from models.state import State
 
 
-
 class test_state(test_basemodel):
     """ """
 
