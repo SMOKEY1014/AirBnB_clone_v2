@@ -98,13 +98,3 @@ class DBStorage:
         """ calls remove()
         """
         self.__session.close()
-    def __init__(self):
-        """
-        Override the default __init__ to create a session only after
-        the engine is properly initialized.
-        """
-        super().__init__()
-        if self.__engine:
-            self.__session = scoped_session(
-                sessionmaker(bind=self.__engine, expire_on_commit=False)
-            )

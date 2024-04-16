@@ -16,7 +16,7 @@ class User(BaseModel, Base):
         last_name: last name
     """
     __tablename__ = "users"
-    email = Column(String(128), unique=True, nullable=False)
+    email = Column(String(128), nullable=False)
     password = Column(String(128), nullable=False)
     first_name = Column(String(128))
     last_name = Column(String(128))
