@@ -2,7 +2,7 @@
 """This is the city class"""
 from sqlalchemy.ext.declarative import declarative_base
 from models.base_model import BaseModel, Base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Boolean, String
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
 from models.place import Place
