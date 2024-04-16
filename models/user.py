@@ -4,8 +4,15 @@ from models.base_model import BaseModel
 from sqlalchemy import Column, String
 
 
-class User(BaseModel):
-    """This class defines a user by various attributes"""
+class User(BaseModel, Base):
+    """This class defines a user by various 
+        Attributes:
+            email: email address
+            password: password for you login
+            first_name: first name
+            last_name: last name
+
+    """
     email = Column(String(128), nullable=False)
     password = Column(String(128), nullable=False)
     first_name = Column(String(128), nullable=False)
